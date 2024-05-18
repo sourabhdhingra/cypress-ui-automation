@@ -7,4 +7,10 @@
 1. Install cypress `npm install cypress --save` and not as dev dependency.
 2. Run `npx cypress open`. Below window should open!
     ![Thumbnail](./resources/open-cypress.png)
-3. Click on `e2e` folder and click on `index.js` file. Cypress will run the test cases and show the results in
+3. From the window > choose Chrome > Start E2E Testing in Chrome.
+4. Cypress will open a new Chrome browser and run the test cases. Below is the screenshot of the test cases running. From this window either add your own spec or use existing examples!
+     ![Thumbnail](./resources/run-e2e-using-chrome.png)
+5. While manually creating your spec make sure your file follows format `*.cy.js`
+6. Select your spec `react-shopping-cart.cy.js` in this case.Selecting a spec will load the test run.
+7. Cypress will run the test cases and show the results. Below is the screenshot of the test cases running.
+    ![Thumbnail](./resources/run-cypress-spec.png)
