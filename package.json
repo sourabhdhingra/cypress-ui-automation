@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "start": "my-server -p 3000",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.9.0"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^2.0.3"
   }
 }
