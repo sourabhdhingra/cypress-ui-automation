@@ -14,7 +14,19 @@
 6. Select your spec `react-shopping-cart.cy.js` in this case.Selecting a spec will load the test run.
 7. Cypress will run the test cases and show the results. Below is the screenshot of the test cases running.
     ![Thumbnail](./resources/run-cypress-spec.png)
-8. Setting up CI for Cypress requires setting up of a server process of `Cypress run` since in CI container a Cyprus server need to start. First we will set locally and then ensure it works for CI too. We will use [start-server-and-test](https://www.npmjs.com/package/start-server-and-test) npm package.
+8. Setting up CI for Cypress requires setting up of a server process of `Cypress run` since in CI container a Cyprus server need to start. You can set your application server locally and then ensure it works for CI too. Use [start-server-and-test](https://www.npmjs.com/package/start-server-and-test) npm package.
     ```
     npm install start-server-and-test --save-dev
     ```
+
+9. Now update `script` section in `package.json` with below. `my-server` refers to your application server which is found in `PATH` and can be run locally or on CI container.
+    ```json
+     "scripts": {
+        "start": "my-server -p 3000",
+        "cy:run": "cypress run",
+        "test": "start-server-and-test start http://localhost:3000 cy:run"
+    }
+    ```
+
+
+10. In this project we do not need above step as we are testing on an already deployed website.
