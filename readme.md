@@ -55,7 +55,7 @@
 17. Notice the details such as name of spec run, time taken, container: Linux Ubuntu, Browser: Chrome 125 etc. Cyprus cloud provides quite a comprehensive reporting along with Test Replay. We can also enable the screenshots and video recording as they are disabled by default. In such scenario only cloud artifact uploaded are logs. Click arrow button right to `Test Replay` then click on `View Ouput`. You would see below:
 ![Thumbnail](./resources/test-replay-output.png)
 
-18. A little about Cypruss code Cypress offers amazing capablities in form [Cypress commands(https://docs.cypress.io/api/table-of-contents)] viz.
+18. A little about Cypruss code Cypress offers amazing capablities in form [Cypress commands](https://docs.cypress.io/api/table-of-contents) viz.
     - `query` - Queries are Cypress commands that read the state of your application. They return a subject for further commands to act or assert on, and retry as needed to make sure the DOM element or other data they yield is always up to date.
     - `assertion` - Cypress commands that assert on the state of your application. They pause your test until the given condition is met, or until they time out
     - `action` - Actions are Cypress commands that interact with your application as a user would. They wait for elements to be actionable before interacting with the page.
