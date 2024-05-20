@@ -72,6 +72,6 @@
     - Here `cy` is short for cypress.
     - `get` is to query the DOM that can result in one or more elements depending upon the selector passed.
     - `contains` is another query commans which would operate on the element returned by `get`. It checks if the text of elements contains the substring input passed.
-    - `should` is an assertion. Cypress supports awesoma assertion libraries `Chai`, `Sinon-Chai` and `Chai-jquery` making it really powerful and readable code. Checkout [link](https://docs.cypress.io/guides/references/assertions)
+    - `should` is an assertion. Cypress supports awesome assertion libraries `Chai`, `Sinon-Chai` and `Chai-jquery` making it really powerful and readable code. Checkout [link](https://docs.cypress.io/guides/references/assertions)
     - We have used `should` an assertion passing it `chainers` i.e `'be.visible'` which checks if the element is yet visible in the DOM or not.
     - The beautiful thing here is the presence of chainable commands. We can chain commands one after another to pefrom a combination of `query`, `assertion`, `action` etc. This helps reduce the boilerplate code.
